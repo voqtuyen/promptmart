@@ -1,0 +1,25 @@
+[project]
+name = "promptmart"
+version = "0.0.1"
+description = "A curated collection of high-quality prompts designed to work seamlessly with Python frameworks"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "langchain-community>=0.3.23",
+    "langchain-openai>=0.3.16",
+]
+license = { text = "MIT" }
+authors = [{ name = "Tuyen Vo", email = "voqtuyen@gmail.com" }]
+keywords = ["prompts", "prompt engineering", "prompt mart"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/voqtuyen/promptmart"
+
+[build-system]
+requires = ["uv"]
+build-backend = "uv.build"
