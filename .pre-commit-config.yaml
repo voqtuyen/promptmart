@@ -22,5 +22,7 @@ repos:
       # Run the linter.
       - id: ruff
         args: [ --fix ]
+        files: ^promptmart/|^examples/
       # Run the formatter.
       - id: ruff-format
+        files: ^promptmart/|^examples/
