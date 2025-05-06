@@ -2,9 +2,9 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 
-from promptmart.rag import TEMPLATE_QUERY_REWRITING
+from promptmart.rag.query import QUERY_REWRITING_TEMPLATE
 
-prompt_template = ChatPromptTemplate.from_template(TEMPLATE_QUERY_REWRITING)
+prompt_template = ChatPromptTemplate.from_template(QUERY_REWRITING_TEMPLATE)
 generate_queries = (
     prompt_template
     | ChatOpenAI(model="gpt-4o-mini")
