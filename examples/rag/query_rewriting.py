@@ -11,7 +11,9 @@ generate_queries = (
     | (lambda x: x.split("\n"))
 )
 
-generate_queries.invoke({"question": "What is the capital of France?", "num_questions": 5})
+generate_queries.invoke(
+    {"question": "What is the capital of France?", "num_questions": 5}
+)
 # ['1. Which city serves as the capital of France?',
 #  "2. Can you tell me the name of France's capital city?",
 #  '3. What is the name of the capital city located in France?',
