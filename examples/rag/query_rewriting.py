@@ -1,7 +1,8 @@
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
-from prompts.rag import TEMPLATE_QUERY_REWRITING
+
+from promptmart.rag import TEMPLATE_QUERY_REWRITING
 
 prompt_template = ChatPromptTemplate.from_template(TEMPLATE_QUERY_REWRITING)
 generate_queries = (
