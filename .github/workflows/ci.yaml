@@ -5,7 +5,7 @@ on:
     branches: [master]
 
 jobs:
-  code-quality:
+  CI:
     runs-on: ubuntu-latest
     strategy:
       matrix:
