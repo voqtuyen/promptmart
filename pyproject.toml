@@ -21,8 +21,8 @@ classifiers = [
 Homepage = "https://github.com/voqtuyen/promptmart"
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
 
 [tool.isort]
 src_paths = ["promptmart", "examples"]
